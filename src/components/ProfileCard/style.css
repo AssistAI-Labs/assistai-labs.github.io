@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 2rem;
-    border: 0.3rem solid ;
+    border: 0.3rem solid #0beffa ;
     /* box-shadow: -2px 2px 400px -48px rgba(11,239,250,0.75);
 -webkit-box-shadow: -2px 2px 400px -48px rgba(11,239,250,0.75);
 -moz-box-shadow: -2px 2px 400px -48px rgba(11,239,250,0.75); */
@@ -15,11 +15,11 @@
         #0beffa 0%, #004E91 30%,
         #000 30%, #000 100%
     ); */
-    border-image-slice: 1;
-    animation: rotate 6s linear infinite;
+    /* border-image-slice: 1;
+    animation: rotate 6s linear infinite; */
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     0% {
         border-image-source: linear-gradient(0deg, #004E91, #08F6FF);
     }
@@ -35,7 +35,7 @@
     100% {
         border-image-source: linear-gradient(360deg, #004E91, #08F6FF);
     }
-}
+} */
 
 .profile-image-div {
     width: 12rem; /* Adjust the width as needed */

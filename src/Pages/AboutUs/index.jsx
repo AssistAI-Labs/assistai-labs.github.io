@@ -44,7 +44,7 @@ const AboutUs = () => {
   }, []);
 
   const openForm = () => {
-    window.open("https://forms.gle/fXJFUXBSubQUz6zC9", "_blank");
+    window.open("https://form.gle/fXJFUXBSubQUz6zC9", "_blank");
   };
 
   return (

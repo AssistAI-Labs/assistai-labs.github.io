@@ -18,6 +18,7 @@ const Loading = () => {
             disablePictureInPicture
             preload="auto"
             ref={videoRef}
+            className='loading-video'
             >
               <source src={loadingVideo} type="video/mp4" />
             </video>

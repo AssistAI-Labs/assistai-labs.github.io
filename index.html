@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="gaM1Vi_rSTS7YTODnzqkQDNfn9wj0HHmnwouYLk1k1g" />
+    <link rel="icon" type="image/jpg" href="/src/assets/onlylogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssistAI Labs</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      !function(w, d, s, ...args){
+        var div = d.createElement('div');
+        div.id = 'aichatbot';
+        d.body.appendChild(div);
+        w.chatbotConfig = args;
+        var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s);
+        j.defer = true;
+        j.type = 'module';
+        j.src = 'https://aichatbot.sendbird.com/index.js';
+        f.parentNode.insertBefore(j, f);
+      }(window, document, 'script', 'E4ACC61E-BACE-415C-8BFB-708DC7449A42', 'onboarding_bot', {
+        apiHost: 'https://api-cf-ap-8.sendbird.com',
+      });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    font-family: 'Michroma', sans-serif;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+button {
+  font-family: 'Michroma', sans-serif;
+}
+
+  .section {
+    height: 100vh; 
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    /* margin-bottom: 1.5rem; */
+    width: calc(100% - 3rem); 
+    border-radius: 2rem;
+}
+  

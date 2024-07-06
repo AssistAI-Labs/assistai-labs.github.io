@@ -1,0 +1,35 @@
+.team-section {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    width: calc(100% - 8rem); 
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.team-heading {
+    font-size: 2rem;
+    background: linear-gradient(to right, #0beffa,#193d86, #193d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.team-container {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        margin: 2rem;
+        width: calc(100% - 4rem); 
+    }
+    .team-heading {
+        font-size: 1.5rem;
+    }
+    .team-container {
+        flex-direction: column;
+    }
+}

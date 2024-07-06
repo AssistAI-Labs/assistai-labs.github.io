@@ -17,7 +17,7 @@ function App() {
     // Simulating a delay to show loading screen
     setTimeout(() => {
       setIsLoading(false);
-    }, 7000); // Adjust the timeout as needed
+    }, 2000); // Adjust the timeout as needed
   }, []);
   return (
     <>

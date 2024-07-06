@@ -3,11 +3,19 @@ import logo from "../../assets/assistailogo.jpg";
 import gmail from "../../assets/gmail.png";
 import india from "../../assets/india.png";
 import "./style.css";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
     <div className="footer-section">
-      <img src={logo} className="logo" alt="" />
+      <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+      <img src={logo} className="logo" alt="" /></Link>
       <div className="footer-text">
         Simplify your life and reclaim your time with AssistAI Labs. <br />
         Explore our intelligent robots and discover a smarter way to manage your

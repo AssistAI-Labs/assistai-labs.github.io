@@ -44,7 +44,7 @@ const AboutUs = () => {
   }, []);
 
   const openForm = () => {
-    window.open("https://form.gle/fXJFUXBSubQUz6zC9", "_blank");
+    window.open("https://tally.so/r/m6x2e5", "_blank");
   };
 
   return (

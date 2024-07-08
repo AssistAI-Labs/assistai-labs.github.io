@@ -79,58 +79,6 @@ const AboutUs = () => {
         Here&apos;s how our AI-powered robots become your helping hand:
       </div>
 
-      {/* <div className="div-main">
-        <div className="extra-div"></div>
-        <div className="div-main-2">
-          <div className="div-1 offerings">
-            Say Goodbye to Back-Breaking Work{" "}
-          </div>
-          <div className="div-2 offerings">Dishes? No Problem</div>
-          <div className="div-3 offerings">Mopping made simple</div>
-        </div>
-        <div className="div-main-3">
-          <div className="offerings">
-            <img src={arrow1} alt="" className="arrow-left arrow-size" />
-          </div>
-          <div className="offerings">
-            <img src={arrow2} alt="" className="arrow-size-mid" />
-          </div>
-          <div className="offerings">
-            <img src={arrow1} alt="" className="arrow-size arrow-3" />
-          </div>
-        </div>
-        <div className="video-div">
-          <video
-            autoPlay
-            loop
-            muted
-            disablePictureInPicture
-            preload="auto"
-            className="circle-video"
-          >
-            <source src={circleVideo} type="video/mp4" />
-          </video>
-        </div>
-        <div className="div-main-3">
-          <div className="offerings">
-            <img src={arrow1} alt="" className="arrow-size arrow-4" />
-          </div>
-          <div className="offerings">
-            <img src={arrow2} alt="" className="arrow-size-mid arrow-5" />
-          </div>
-          <div className="offerings">
-            <img src={arrow1} alt="" className="arrow-size arrow-6" />
-          </div>
-        </div>
-        <div className="div-main-2">
-          <div className="div-4 offerings">
-            Assistance in minimalistic tasks
-          </div>
-          <div className="div-5 offerings">Peace of Mind, built in!</div>
-          <div className="div-6 offerings">Laundry made Easier</div>
-        </div>
-        <div className="extra-div"></div>
-      </div> */}
       <div className="newvideo">
         <video autoPlay
             loop

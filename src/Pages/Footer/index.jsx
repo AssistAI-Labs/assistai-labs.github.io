@@ -21,46 +21,60 @@ const Footer = () => {
           <img src={logo} className="logo" alt="AssistAI Labs logo" />
         </Link>
         <div className="footer-nav-section">
-        <div>
-          <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
-            Home
-          </Link>
+          <div>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Link>
+          </div>
+          <span>|</span>
+          <div>
+            <Link
+              to="aboutUs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About us
+            </Link>
+          </div>
+          <span>|</span>
+          <div>
+            <Link
+              to="ourTeam"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Our team
+            </Link>
+          </div>
+          <span>|</span>
+          <div>
+            <Link
+              to="contactUs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contact us
+            </Link>
+            
+          </div>
+          
         </div>
-        <div>
-          <Link
-            to="aboutUs"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            About us
-          </Link>
-        </div>
-        <div>
-          <Link
-            to="ourTeam"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Our team
-          </Link>
-        </div>
-        <div>
-          <Link
-            to="contactUs"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Contact us
-          </Link>
-        
-        </div>
-        </div>
+        <span className="copyright-text">
+        AssistAI Labs &copy; 2024
+        </span>
+        <hr className="divider"/>
       </div>
       <div className="footer-contact-section">
         <span>Get in Touch</span>
@@ -74,6 +88,7 @@ const Footer = () => {
         <div>
           <FaLocationDot className="footer-icon" /> New Delhi, India
         </div>
+        <hr className="divider"/>
       </div>
 
       <div className="footer-links-section">
@@ -100,17 +115,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      {/* <div className="extra-detail">
-        <span>Get in Touch</span>
-        <FontAwesomeIconmg src={gmail} alt="" className="icon" />
-        Email : 
-        <a href="mailto:assistailabs@gmail.com">assistailabs@gmail.com</a>
-      </div>
-      <div className="extra-detail lower-section">
-        <FontAwesomeIconmg src={india} className="icon" alt="" />
-        Phone: 
-        +91 8700510741
-      </div> */}
     </div>
   );
 };

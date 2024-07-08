@@ -6,27 +6,39 @@
     background-color: #1d1d1d;
     color: #ffffff;
     text-align: center;
-    height: 15rem;
+    height: 17rem;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-
 
 .footer-logo-section{
     display: flex;
     flex-direction: column;
-    margin: 2.5rem auto auto 2.5rem;
+    align-items: flex-start;
+    margin: 2.5rem 1rem;
 }
 
 .footer-nav-section{
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-around;
+    margin: 0.5rem 0;
+}
+
+.footer-nav-section>div{
+    margin: 0 0.4rem;
+    cursor: pointer;
+}
+
+.copyright-text{
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    color: #adadad;
 }
 
 .logo {
     width: 10rem;
     cursor: pointer;
+    text-align: left;
 }
 
 .footer-contact-section{
@@ -35,6 +47,12 @@
     font-size: 1rem;
     align-items: flex-start;
     justify-content: center;
+}
+
+.footer-contact-section{
+    border-left: 0.1px solid rgb(83, 83, 83);
+    padding-left:2.5rem ;
+    border-right: 0.1px solid rgb(83, 83, 83);
 }
 
 .footer-contact-section>span{
@@ -61,6 +79,7 @@
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    margin-left: 2.5rem ;
 }
 
 .footer-links-section>span{
@@ -117,7 +136,7 @@
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .logo {
         width: 6rem;
     }
@@ -139,4 +158,76 @@
         margin-left: 0;
     }
     
+} */
+
+@media (max-width: 768px) {
+    .footer-section {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        height: 30rem;
+    }
+
+    .footer-contact-section{
+        border-left: none;
+        padding-left:0 ;
+        border-right: none;
+    }
+
+    .footer-logo-section{
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .divider{
+        width: 100%;
+        /* background-color: rgb(142, 142, 142); */
+        border: 0.1px solid rgb(83, 83, 83);
+        height: 0;
+    }
+
+    .logo{
+        width: 6rem;
+    }
+
+    .footer-nav-section,.copyright-text{
+        font-size: 0.8rem ;
+    }
+
+    .footer-contact-section{
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .footer-contact-section>span{
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .footer-contact-section>div{
+        margin-top: 0.5rem;
+    }
+
+    .footer-icon{
+        font-size: 1rem;
+    }
+
+    .footer-links-section{
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links-section>span {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    .footer-text{
+        font-size: 0.8rem;
+        margin: 1rem 2rem;
+    }
+
+    .social-links{
+        width: 16rem;
+    }
 }

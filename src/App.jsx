@@ -19,6 +19,24 @@ function App() {
       setIsLoading(false);
     }, 2000); // Adjust the timeout as needed
   }, []);
+  useEffect(() => {
+    window.TallyConfig = {
+      "formId": "m6x2e5",
+      "popup": {
+        "width": 200,
+        "emoji": {
+          "text": "👋",
+          "animation": "wave"
+        },
+        "layout": "modal",
+        "autoClose": 0,
+        "open": {
+          "trigger": "scroll",
+          "scrollPercent": 57
+        }
+      }
+    };
+  }, []);
   return (
     <>
     {isLoading ? (

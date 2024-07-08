@@ -21,7 +21,7 @@
   }
 
   .main-heading { 
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0 18.3rem;
   }
 
@@ -44,7 +44,7 @@
   .sub-content {
     margin: 0 20rem;
     margin-top: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     /* opacity: 0;
     animation: fadeIn 1s ease-in;  */
   }
@@ -67,7 +67,7 @@
     width: 8rem;
     height: 3rem;
     border-radius: 0.5rem ;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: transform 0.3s ease;
   }
 
@@ -157,11 +157,11 @@
     }
 
     .main-heading {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     .sub-content {
-      font-size: 0.8rem;
+      font-size: 1.3rem;
       
     }
   

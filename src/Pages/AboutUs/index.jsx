@@ -44,7 +44,7 @@ const AboutUs = () => {
   }, []);
 
   const openForm = () => {
-    window.open("https://forms.gle/fXJFUXBSubQUz6zC9", "_blank");
+    window.open("https://tally.so/r/m6x2e5", "_blank");
   };
 
   return (
@@ -157,7 +157,7 @@ const AboutUs = () => {
             Click below to share your voice.
           </div>
           <div className="survey-button-part">
-            <button className="survey-button" onClick={openForm}>
+            <button className="survey-button" data-tally-open="m6x2e5" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
               Share
             </button>
           </div>

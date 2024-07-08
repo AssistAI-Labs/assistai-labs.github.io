@@ -1,7 +1,5 @@
 import React from "react";
 import logo from "../../assets/assistailogo2.png";
-import gmail from "../../assets/gmail.png";
-import india from "../../assets/india.png";
 import { Link } from "react-scroll";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -10,6 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
 import { MdCall } from "react-icons/md";
+import { Router, Link as RouterLink} from "react-router-dom";
 
 import "./style.css";
 
@@ -83,10 +82,14 @@ const Footer = () => {
           <a href="mailto:assistailabs@gmail.com">assistailabs@gmail.com</a>
         </div>
         <div>
-          <MdCall className="footer-icon" /> +91 8700510741
+          <MdCall className="footer-icon" /><a href="tel:+91 8700510741"> +91 8700510741</a>
         </div>
         <div>
-          <FaLocationDot className="footer-icon" /> New Delhi, India
+          <FaLocationDot className="footer-icon" /><a 
+        href={`https://www.google.com/maps?q=NewDelhi`} 
+        target="_blank" 
+        rel="noopener noreferrer"
+      > New Delhi, India</a>
         </div>
         <hr className="divider"/>
       </div>

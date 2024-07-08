@@ -10,14 +10,14 @@
 
 
 .image-context {
-    font-size: xx-small;
+    font-size: small;
     color: #ffffff;
     margin-bottom: 2rem; 
     /* text-align: lef;  */
 }
 
 .about-main-heading-1 {
-    font-size: 2rem;
+    font-size: 3rem;
     background: linear-gradient(to right, #0beffa, #193d86,#193d86, #193d86);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,13 +51,13 @@
 
 .about-part-1-content-heading {
     color: #0beffa;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .about-part-1-content-text {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .about-part-2 {
@@ -69,6 +69,8 @@
 .about-part-2-content {
     color: #fff;
     text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
 }
 
 .offerings {
@@ -106,10 +108,11 @@ video {
     flex-direction: column;
     margin: 4rem 0;
     width: calc(60%-8rem);
+    
 }
 
 .survey-title {
-    font-size: 2rem;
+    font-size: 3rem;
     background: linear-gradient(to right, #0beffa,#193d86, #193d86);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,7 +120,7 @@ video {
 }
 
 .survey-content {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
     margin: 1rem 0;
 }
@@ -134,7 +137,7 @@ video {
     width: 8rem;
     height: 3rem;
     border-radius: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -238,7 +241,7 @@ padding-top: 1rem;
 
 @media (max-width: 768px) {
     .image-context {
-        font-size: 0.4rem;
+        font-size: 0.7rem;
     }
     .about-section {
         margin: 2rem;
@@ -250,16 +253,16 @@ padding-top: 1rem;
     }
 
     .about-main-heading-1, .survey-title {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
     }
 
     .about-part-1-content-heading {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .about-part-1-content-text, .about-part-2-content,
     .survey-content {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .about-part-1-image-container {

@@ -9,7 +9,7 @@
 }
 
 .team-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     background: linear-gradient(to right, #0beffa,#193d86, #193d86);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -27,7 +27,8 @@
         width: calc(100% - 4rem); 
     }
     .team-heading {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
+        margin-top: 2rem;
     }
     .team-container {
         flex-direction: column;

@@ -11,7 +11,7 @@
 .contact-heading {
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.9rem;
     background: linear-gradient(to right, #97e9ed, #0beffa,#193d86);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,10 +22,11 @@
     margin: 2rem 0;
     width: 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
 }
 
 .contact-form-container {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -37,7 +38,7 @@
 }
 
 .form-label {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .form-input {
@@ -48,6 +49,7 @@
     color: #ffffff;
     border-bottom: 2px solid #888888;
     padding: 0.5rem;
+    font-size: 1rem;
 }
 
 .form-input:focus {
@@ -57,7 +59,7 @@
 .submit-btn {
     width: 12rem;
     height: 3rem;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     background: linear-gradient(to right, #0beffa,#05A3A9,#193d86);
     border-style: none;
     border-radius: 0.5rem;
@@ -78,10 +80,10 @@
         width: calc(100% - 4rem); 
     }
     .contact-heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .contact-content {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     .contact-form {
         width: 100%;

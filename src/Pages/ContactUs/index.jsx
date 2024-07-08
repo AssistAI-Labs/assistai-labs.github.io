@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import axios from "axios";
+import Alert from "../../components/Alert";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,9 @@ const ContactUs = () => {
     email: "",
     message: "",
   });
+
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertColor, setAlertColor] = useState('success');
 
   const handleChange = (e) => {
     setFormData({
@@ -29,8 +33,11 @@ const ContactUs = () => {
         }
       ]
     };
+
+    // const url = 'https://tally.so/widgets/embed.js'
+    const url = 'https://api.apispreadsheets.com/data/3VghKKQTyLZ6uUyN/'
   
-    fetch('https://api.apispreadsheets.com/data/3VghKKQTyLZ6uUyN/', {
+    fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -39,23 +46,47 @@ const ContactUs = () => {
     })
     .then((response) => {
       if (response.ok) {
-        alert('Form Data Submitted :)');
+        // alert('Form Data Submitted :)');
+        setAlertMessage('Your message has been successfully submitted, and we will get back to you shortly')
+        setAlertColor('success')
         setFormData({
           name: '',
           email: '',
           message: ''
         });
+
+        setTimeout(() => {
+          setAlertMessage('');
+          setAlertColor('');
+      }, 10000);
       } else {
         response.json().then((data) => {
-          alert(`Error: ${data.message}`);
+          // alert(`Error: ${data.message}`);
+        setAlertMessage('Server Error')
+        setAlertColor('error')
+        setTimeout(() => {
+          setAlertMessage('');
+          setAlertColor('');
+      }, 5000);
+
         });
       }
     })
     .catch((error) => {
-      console.error('Error:', error);
-      alert('There was an error :(');
+      // console.error('Error:', error);
+      // alert('There was an error :(');
+      setAlertMessage('Server Error')
+      setAlertColor('error')
+      setTimeout(() => {
+        setAlertMessage('');
+        setAlertColor('');
+    }, 5000);
     });
   };
+
+//   const closeAlert = () => {
+//     setAlertMessage('');
+// };
   
 
   return (
@@ -103,6 +134,16 @@ const ContactUs = () => {
           <button className="submit-btn" onClick={handleSubmit}>
             Send Message
           </button>
+          {alertMessage && 
+                <Alert 
+                    message={alertMessage} 
+                    color={alertColor}
+                    onClose={() => {
+                      setAlertMessage('');
+                      setAlertColor('');
+                  }}
+                />
+            }
         </div>
       </div>
     </div>

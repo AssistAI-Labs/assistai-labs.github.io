@@ -1,17 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 .footer-section {
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    margin: 4rem;
-    width: calc(100% - 8rem); 
-    background-color: #000000;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    background-color: #1d1d1d;
     color: #ffffff;
     text-align: center;
+    height: 15rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+.footer-logo-section{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto auto 2.5rem;
+}
+
+.footer-nav-section{
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .logo {
-    width: 8rem;
-    margin: auto;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.footer-contact-section{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-contact-section>span{
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-left: 0.1rem;
+}
+.footer-contact-section>div{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.footer-icon{
+    background-color: #3e3e3e;
+    padding: 0.4rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.footer-links-section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.footer-links-section>span{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin: 1.5rem 2rem;
+    margin-left: 0;
+    color: #cac8c8;
+}
+
+.social-links{
+    color : #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 10rem;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.footer-link-icons{
+    padding: 0.3rem;
+    background-color: #3e3e3e;
+    border-radius: 0.2rem ;
+    margin-right: 1rem;
+
 }
 
 .extra-detail {
@@ -28,29 +106,37 @@
     width: 1.5rem;
 }
 
-.footer-text {
-    font-size: 0.7rem;
-    margin: 1rem 0;
-}
+
+
+
 
 .extra-detail > a {
     text-decoration: none;
     color: #ffffff;
 }
 
+
+
 @media (max-width: 768px) {
     .logo {
         width: 6rem;
     }
     .footer-section {
-        width: calc(100%-4rem);
+        margin: 1rem;
+        width: calc(100%-2rem);
+        text-align: left;
     }
     .footer-text {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .extra-detail {
         font-size: 0.5rem;
+        margin-left: 0;
+    }
+    .social-links{
+        font-size: 1rem;
+        margin-left: 0;
     }
     
 }

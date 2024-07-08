@@ -1,0 +1,38 @@
+/* .alertStyles{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+} */
+
+.alertStyles {
+    padding: 0.4rem;
+    color: white;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 1rem auto 0 auto ;
+}
+.success {
+    background-color: rgba(0, 0, 0, 0.594);
+}
+
+.error {
+    background-color: red;
+}
+
+/* .success{
+    background-color: green;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 16rem;
+}
+.error{
+    background-color: red;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 10rem;
+} */

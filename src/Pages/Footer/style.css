@@ -8,6 +8,9 @@
     text-align: center;
     height: 17rem;
     font-family: 'Josefin Sans', sans-serif;
+    box-shadow: -1px -3px 125px -35px rgba(108,117,128,0.8);
+-webkit-box-shadow: -1px -3px 125px -35px rgba(108,117,128,0.8);
+-moz-box-shadow: -1px -3px 125px -35px rgba(108,117,128,0.8);
 }
 
 .footer-logo-section{

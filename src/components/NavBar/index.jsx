@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../assets/assistailogo.jpg'
+import logo from '../../assets/assistailogo2.png'
 import { Link } from 'react-scroll';
 import { RiMenuFill } from "react-icons/ri";
 import './style.css'

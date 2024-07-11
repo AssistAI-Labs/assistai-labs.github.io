@@ -105,7 +105,7 @@ const AboutUs = () => {
             Click below to share your voice.
           </div>
           <div className="survey-button-part">
-            <button className="survey-button" data-tally-open="m6x2e5" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
+            <button className="survey-button" data-tally-open="m6x2e5" data-tally-layout="modal" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" data-tally-auto-close="1000">
               Share
             </button>
           </div>

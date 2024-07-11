@@ -7,6 +7,6 @@ import generateSitemap from 'vite-ssg-sitemap'
 export default defineConfig({
   plugins: [react(),Vue()],
   ssgOptions: {
-    onFinished(){generateSitemap({hostname : 'https://assistai-labs.github.io', readable: true})},
+    onFinished(){generateSitemap({hostname : 'https://assistai-labs.github.io', readable: true,externalSitemaps: ['https://assistai-labs.github.io/sitemap.xml']})},
   }
 })

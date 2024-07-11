@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import Vue from '@vitejs/plugin-vue'
 import generateSitemap from 'vite-ssg-sitemap'
 
 // https://vitejs.dev/config/

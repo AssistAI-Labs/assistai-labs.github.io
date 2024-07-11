@@ -17,6 +17,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@vitejs/plugin-vue": "^5.0.5",
     "axios": "^1.7.2",
     "intersection-observer": "^0.12.2",
     "react": "^18.2.0",
